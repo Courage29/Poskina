@@ -1,4 +1,7 @@
 .FlashSale{
     background: black;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
 }

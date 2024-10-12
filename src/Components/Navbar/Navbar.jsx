@@ -1,15 +1,21 @@
 import React from "react";
-import "./Navbar.css"
+import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import BrandLogo from "../../assets/BrandLogo.png";
 import filterIcon from "../../assets/filter-icon.png";
+import { useState } from "react";
 
 const Navbar = ({ itemCount }) => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
   return (
-    <nav className="navbar">
-      <div>
+    <nav className="navbar container">
+      <div className="firstNav">
         <div>
-          <ul>
+          <ul className="different-pages">
             <li>
               <NavLink to="/About">About</NavLink>
             </li>
@@ -22,11 +28,16 @@ const Navbar = ({ itemCount }) => {
             <li>
               <NavLink to="contacts">Contact</NavLink>
             </li>
-            <li>We deliver nationwide from 7:00 to 23:00</li>
+            <li>
+              We deliver nationwide from{" "}
+              <span style={{ color: "black", fontWeight: "bold" }}>
+                7:00 to 23:00
+              </span>
+            </li>
           </ul>
         </div>
         <div>
-          <ul>
+          <ul className="Lang-OrdTrack">
             <li class="dropdown-container">
               <select id="language-select" className="lang-dropdown">
                 <option value="en">English</option>
@@ -41,43 +52,50 @@ const Navbar = ({ itemCount }) => {
         </div>
       </div>
       <div>
-        <ul>
+        <ul className="second-nav">
           <li>
             <NavLink to="/" className="logo">
-              <img src={BrandLogo} alt="Logo" />
-              Poskina
+              <img src={BrandLogo} alt="Logo" className="brand-logo" />
             </NavLink>
           </li>
-          <li>
-            <i class="bi bi-geo-alt"></i>Deliver to Nigeria
+          <li className="location">
+            <i className="bi bi-geo-alt icon-location"></i>
+            <p>
+              Deliver to <span className="nig">Nigeria</span>
+            </p>
           </li>
           <li>
-            {" "}
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Search for products, categories or brand..."
-            />
-            <button className="search-button">
-              <i class="bi bi-search"></i>
-            </button>
+            <div className="search-input-wrapper">
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={handleSearchChange}
+                placeholder="Search..."
+                className="search-input"
+              />
+              <i class="bi bi-search search-icon"></i>
+            </div>
           </li>
-          <li>
-            <select id="product-select" className="prod-filter-dropdown">
-              <option value="en">Shoes</option>
-              <option value="es">Clothes</option>
-              <option value="fr">Bags</option>
-              <option value="de">Bags</option>
+          <li className="filter-section">
+            <img src={filterIcon} alt="" className="filter-icon" />
+            <select className="filter-dropdown">
+              <option value="" disabled selected hidden className="filter-word">
+                Filter
+              </option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
             </select>
           </li>
           <li>
             <button className="cart-button">
-              <img src={filterIcon} alt="" className="cart-icon"/>
+              <i class="bi bi-cart-dash cart-icon"></i>
               {itemCount > 0 && <span className="badge">{itemCount}</span>}
             </button>
           </li>
-          <li>
-            Sign In
+          <li className="signin-user">
+            <i class="bi bi-person icon-location"></i>
+            <p>Sign In</p>
           </li>
         </ul>
       </div>

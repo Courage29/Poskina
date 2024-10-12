@@ -1,0 +1,50 @@
+.category{
+    display: flex;
+    justify-content: center; /* Center all items in the container */
+    align-items: center; /* Center items vertically if needed */
+     gap: 40px; /*Space between all flex items */
+     margin-top: 30px;
+     align-content: center;
+     text-align: center;
+     align-self: center;
+}
+.cat{
+    margin-right: 150px; /* Adds more space between the heading and the subcategories */
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+/* Styling for subcategory items */
+.subcategory {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .subcatcontainer{
+    display: flex;
+    flex-direction: row; /* Stack image and description vertically */
+    align-items: center;
+  }
+  .fourColumn{
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items vertically */
+  }
+  .title{
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .posk-feat{
+    display: flex;
+    flex-direction: row; /* Stack image and description vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px;
+    width:23% ;
+  }
+  .posk-feat-img{
+    object-fit: cover; /* Ensure images are not distorted */
+    margin-bottom: 10px; /* Space between image and description */
+  }
+  .desc-para{
+    font-size: 0.9rem;
+  }
