@@ -27,6 +27,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: white;
 }
 
 /* Style for the cart icon */

@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Home from "./Pages/Home/Home"
 import About from "./Pages/About/About"
 import ContactUs from "./Pages/ContactUs/ContactUs"
+import Footer from './Components/Footer/Footer';
 const App = () => {
    const [itemCount, setItemCount] = useState(3); // Example item count
   return (
@@ -23,6 +24,7 @@ const App = () => {
               {/* Add other routes here as needed */}
           </Routes>
       </Router>
+      <Footer/>
       </div>
   );
 }

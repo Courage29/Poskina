@@ -1,0 +1,126 @@
+.footer {
+    background-color: #e4e2e2;
+    padding-top: 20px;
+  }
+  
+  .upper-footer, .lower-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .upper-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .first-row {
+    justify-content: space-between; /* Distributes the two items evenly */
+  }
+  
+  .second-row {
+    justify-content: space-between; /* Aligns items to the left */
+    margin-top: 30px;
+  }
+  
+  .second-row .distant-item {
+    margin-right: 40px; /* Creates more distance from the other three items */
+  }
+  
+  .last-row {
+    justify-content: flex-end; /* Positions the last item to the far right */
+  }
+  
+  .footer-separator {
+    border: 0;
+    border-top: 1px solid grey;
+    margin: 20px 0;
+  }
+  
+  .lower-footer {
+    display: flex;
+    justify-content: space-between; /* Distributes the three items evenly */
+    align-items: center;
+    padding: 10px 0;
+    flex-direction: row;
+  }
+  
+  .lower-item {
+    flex: 1;
+    text-align: center;
+  }
+  .size-font{
+    font-size: 0.9rem;
+    color: grey;
+  }
+  .shortBizIntro{
+    margin-top: 20px;
+  }
+  .RegLetter{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .input-container {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 5px 5px 0;
+    position: relative;
+    color: grey;
+  }
+  .icon-envelope{
+    position: absolute;
+    left: 12px;
+    align-self: center;
+  }
+  
+  .input-container input[type="email"] {
+    border: none;
+    outline: none;
+    padding: 8px 8px 8px 35px;
+    width: 250px;
+    font-size: 1em;
+    color: grey;
+    border-radius: 10px 0px 0px 10px;
+  }
+  
+  .input-container button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .input-container button:hover {
+    background-color: rgb(37, 6, 6);
+    color: white;
+  }
+  .app{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .up-item-sec-row-heading{
+    margin-bottom: 16px;
+  }
+  .up-item-sec-row-text{
+    margin-top: 5px;
+  }
+  .up-item-sec-row-text-icon{
+    padding-right: 5px;
+
+  }
+  .up-item-sec-row-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .up-item-sec-row-buttons button{
+    border: none;
+    background: none;
+    text-align: start;
+    font-size: 0.9rem;
+    color: grey;
+  }

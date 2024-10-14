@@ -2,6 +2,9 @@ import React from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import "./Product.css";
 import Leggings from "../../assets/leggings.png"
+import EnduranceJacket from "../../assets/endurancejacket.png"
+import GymBag from "../../assets/gymbag.png"
+import SpeedRunnerShoes from "../../assets/speedrunnershoes.png"
 
 const Product = ({ title, description }) => {
   const productList = [
@@ -15,7 +18,7 @@ const Product = ({ title, description }) => {
     },
     {
       id: 2,
-      image: "https://via.placeholder.com/300x180",
+      image: {EnduranceJacket},
       name: "Clothing",
       description: "Endurance Running Jacket",
       price: 28000,
@@ -23,7 +26,7 @@ const Product = ({ title, description }) => {
     },
     {
       id: 3,
-      image: "https://via.placeholder.com/300x180",
+      image: {GymBag},
       name: "Bag",
       description: "Proflex Gym Bag",
       price: 18000,
@@ -31,7 +34,7 @@ const Product = ({ title, description }) => {
     },
     {
       id: 4,
-      image: "https://via.placeholder.com/300x180",
+      image: {SpeedRunnerShoes},
       name: "Shoes",
       description: "Speed runner X Pro Shoes",
       price: 45500,
@@ -39,10 +42,10 @@ const Product = ({ title, description }) => {
     },
   ];
   return (
-    <div>
-      <div>
+    <div className="newProduct">
+      <div className="productHeading">
         <p>
-          <span className="title">{title}:</span>
+          <span className="title">{title}</span>
           {description}
         </p>
       </div>

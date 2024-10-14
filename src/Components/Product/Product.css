@@ -7,5 +7,12 @@
 }
 .title{
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+.productHeading{
+    margin-bottom: 20px;
+}
+.newProduct{
+    margin-top: 60px;
 }

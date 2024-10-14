@@ -13,9 +13,9 @@ const ProductCard = ({ product }) => {
         <div className="product-card">
             <div className="card-image-section">
                 <img src={product.image} alt={product.name} className="product-image" />
-                <span className="discount-badge">{product.discount}% OFF</span>
+                <span className="discount-badge">{product.discount}%</span>
                 <button className={`like-button ${liked ? 'liked' : ''}`} onClick={handleLikeClick}>
-                <i className="bi bi-heart"></i>
+                <i class="bi bi-heart-fill"></i>
                 </button>
             </div>
             <div className="card-info-section">
@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
                 <p className="product-description">{product.description}</p>
                 <h3 className="product-price">${product.price}</h3>
                 <button className="add-to-cart-button">
-                <i className="bi bi-plus-circle"></i>
+                <i class="bi bi-plus"></i>
                 </button>
             </div>
         </div>

@@ -9,6 +9,11 @@ import OnlinePayment from "../../assets/online-payment.png"
 import SpeedyDelivery from "../../assets/speedy-delivery.png"
 import NewStock from "../../assets/new-stock.png"
 import Product from '../../Components/Product/Product'
+import AdvertBanner from "../../assets/advertBanner.png"
+import AdvertBannerSlide1 from "../../assets/advertBannerSlide1.png"
+import AdvertBannerSlide2 from "../../assets/advertBannerSlide2.png"
+import DidYouKnow from "../../assets/didYouKnow.png"
+import FlippedProduct from "../../Components/FlippedProduct/FlippedProduct"
 
 const Home = () => {
   return (
@@ -20,8 +25,8 @@ const Home = () => {
             <div className="subcatcontainer"><img src={BagIcon} alt="Image" /><p className='subcategory'> Bags</p> </div>
             <div className="subcatcontainer"><img src={JournalIcon} alt="" /><p className='subcategory'>Journal</p></div>
         </div>
-        <div className="advertBanner">
-            <img src="" alt="" />
+        <div>
+            <img src={AdvertBanner} alt="Advert Banner" className='advertBanner'/>
         </div>
         <div className="fourColumn">
             <div className="onlinePayment posk-feat">
@@ -54,8 +59,17 @@ const Home = () => {
             </div>
         </div>
         <div className="newProduct">
-        <Product title = "New Products" Description = "Checkout some of the new wears arriving today"/>
+        <Product title = "New Products" description = "Checkout some of the new wears arriving today"/>
         </div>
+        <div className="advertBannerSlide">
+            <img src={AdvertBannerSlide1} alt="AdvertSlide1" className='advertBannerSlideImg'/>
+            <img src={AdvertBannerSlide2} alt="AdvertSlide1" className='advertBannerSlideImg'/>
+        </div>
+        <Product title = "Shoe Collection" description = "Checkout some of the new wears arriving today"/>
+        <div>
+            <img src={DidYouKnow} alt="Fun Fact" className="didYouKnow"/>
+        </div>
+        <FlippedProduct/>
     </div>
   )
 }
