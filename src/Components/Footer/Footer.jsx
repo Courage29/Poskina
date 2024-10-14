@@ -3,6 +3,16 @@ import "./Footer.css";
 import BrandLogo from "../../assets/BrandLogo.png";
 import AppStore from "../../assets/appstore.png";
 import GooglePlay from "../../assets/googleplay.png";
+import Visa from "../../assets/visapayment.png";
+import AmericanExpress from "../../assets/americanexpress.png";
+import MasterCard from "../../assets/mastercard.png";
+import Stripe from "../../assets/stripe.png";
+import Paypal from "../../assets/paypal.png";
+import ApplePay from "../../assets/applepay.png";
+import Facebook from "../../assets/facebook.png";
+import Twitter from "../../assets/twitter.png";
+import Instagram from "../../assets/instagram.png";
+import Linkedln from "../../assets/linkedln.png";
 
 const Footer = () => {
   return (
@@ -77,21 +87,73 @@ const Footer = () => {
           </div>
           <div class="upper-item">
             <h5 className="up-item-sec-row-heading">How to Buy</h5>
+            <div className="up-item-sec-row-buttons">
+              <button>Make Payments</button>
+              <button>Delivery Options</button>
+              <button>Buyer Protection</button>
+            </div>
+          </div>
+          <div class="upper-item">
+            <h5 className="up-item-sec-row-heading">Help</h5>
+            <div className="up-item-sec-row-buttons">
+              <button>Contact Us</button>
+              <button>FAQ</button>
+              <button>Privacy Policy</button>
+            </div>
           </div>
         </div>
         <div class="upper-row last-row">
           <div class="upper-item">
-            <h5 className="up-item-sec-row-heading">Help</h5>
+            <span>
+              <img src={Visa} alt="Visa" />
+            </span>
+            <span>
+              <img src={AmericanExpress} alt="AmericanExpress" />
+            </span>
+            <span>
+              <img src={MasterCard} alt="MasterCard" />
+            </span>
+            <span>
+              <img src={Stripe} alt="Stripe" />
+            </span>
+            <span>
+              <img src={Paypal} alt="Paypal" />
+            </span>
+            <span>
+              <img src={ApplePay} alt="ApplePay" />
+            </span>
           </div>
         </div>
       </div>
 
-      {/* <hr class="footer-separator"> */}
+      <div className="footer-separator"></div>
 
       <div class="lower-footer">
-        <div class="lower-item">Lower Item 1</div>
-        <div class="lower-item">Lower Item 2</div>
-        <div class="lower-item">Lower Item 3</div>
+        <div class="lower-item">
+          <p className="lower-item-color">Follow us on social media:</p>
+          <div className="social-links">
+            <a href="">
+              <img src={Facebook} alt="" />
+            </a>
+            <a href="">
+              <img src={Twitter} alt="" />
+            </a>
+            <a href="">
+              <img src={Instagram} alt="" />
+            </a>
+            <a href="">
+              <img src={Linkedln} alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="lower-item">
+          <p className="lower-item-color">@Copyright 2024 Poskina. All rights reserved</p>
+        </div>
+        <div class="lower-item lower-item-color">
+          <a href="" className="lower-item-third-column-link">Terms and Condition</a>
+          <a href="" className="lower-item-third-column-link mid-link">Privacy Policy</a>
+          <a href="" className="lower-item-third-column-link">Order Tracking</a>
+        </div>
       </div>
     </footer>
   );

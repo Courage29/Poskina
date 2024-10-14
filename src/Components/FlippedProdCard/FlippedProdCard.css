@@ -80,8 +80,7 @@
 
 .flippedproduct-price {
     margin: 10px 0;
-    font-size: 18px;
-    color: #333;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -101,4 +100,10 @@
 
 .flippedadd-to-cart-button:hover {
     background-color: #232424;
+}
+.separator-line {
+    height: 1px; /* Thickness of the separator */
+    background: linear-gradient(to right, transparent, #ccc, transparent); /* Gradient for fade effect */
+    margin: 20px 0; /* Space between sections */
+    width: 100%; /* Full width of the container */
 }
