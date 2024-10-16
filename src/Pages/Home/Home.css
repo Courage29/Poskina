@@ -49,7 +49,9 @@
     margin-bottom: 10px; /* Space between image and description */
   }
   .desc-para{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    color: #6B7280;
+    padding-top: 10px;
   }
   .advertBanner{
     width: 100%;

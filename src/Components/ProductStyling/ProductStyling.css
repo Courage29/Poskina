@@ -9,10 +9,15 @@
     font-weight: bold;
     font-size: 1.2rem;
     margin-right: 15px;
+    color: black;
 }
 .productHeading{
     margin-bottom: 20px;
 }
 .newProduct{
     margin-top: 60px;
+}
+.tit-des{
+    color: #6B7280;
+    font-size: 0.9rem;
 }

@@ -8,7 +8,8 @@ import QualityAssurance from "../../assets/quality-assurance.png"
 import OnlinePayment from "../../assets/online-payment.png"
 import SpeedyDelivery from "../../assets/speedy-delivery.png"
 import NewStock from "../../assets/new-stock.png"
-import Product from '../../Components/Product/Product'
+import FirstProductDisp from '../../Components/FirstProductDisp/FirstProductDisp'
+import SecondProductDisp from '../../Components/SecondProductDisp/SecondProductDisp'
 import AdvertBanner from "../../assets/advertBanner.png"
 import AdvertBannerSlide1 from "../../assets/advertBannerSlide1.png"
 import AdvertBannerSlide2 from "../../assets/advertBannerSlide2.png"
@@ -59,13 +60,13 @@ const Home = () => {
             </div>
         </div>
         <div className="newProduct">
-        <Product title = "New Products" description = "Checkout some of the new wears arriving today"/>
+        <FirstProductDisp title = "New Products" description = "Checkout some of the new wears arriving today"/>
         </div>
         <div className="advertBannerSlide">
             <img src={AdvertBannerSlide1} alt="AdvertSlide1" className='advertBannerSlideImg'/>
             <img src={AdvertBannerSlide2} alt="AdvertSlide1" className='advertBannerSlideImg'/>
         </div>
-        <Product title = "Shoe Collection" description = "Checkout some of the new wears arriving today"/>
+        <SecondProductDisp title = "Shoe Collection" description = "Checkout some of the new wears arriving today"/>
         <div>
             <img src={DidYouKnow} alt="Fun Fact" className="didYouKnow"/>
         </div>

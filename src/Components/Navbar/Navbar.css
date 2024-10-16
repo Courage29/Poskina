@@ -1,8 +1,11 @@
+.navbar{
+    font-size: 0.8rem;
+}
 .firstNav{
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
-    color: grey;
+    color: #6B7280;
 }
 .different-pages{
     display: flex;
@@ -61,15 +64,11 @@ li{
     border-radius: 10px;
 }
 
-.lang-dropdown:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Custom shadow on focus */
-}
 .second-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: grey;
+    color: #6B7280;
     gap: 15px;
 }
 /* SearchBar.css */
@@ -117,6 +116,10 @@ li{
 .nig{
     color: black;
     font-weight: bold;
+}
+.account{
+    color: black;
+    font-weight: bold; 
 }
 .filter-section{
     position: relative;

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./FlippedProdCard.css"
+import PropTypes from 'prop-types';
 
 const FlippedProdCard = ({product}) => {
   const [liked, setLiked] = useState(false);
@@ -17,7 +18,7 @@ const FlippedProdCard = ({product}) => {
           className={`like-button ${liked ? "liked" : ""}`}
           onClick={handleLikeClick}
         >
-          <i class="bi bi-heart-fill"></i>
+          <i className="bi bi-heart-fill"></i>
         </button>
       </div>
       <div className="flippedcard-info-section">
@@ -27,11 +28,14 @@ const FlippedProdCard = ({product}) => {
         <div className="separator-line"></div>
         <p className="flippedproduct-time-remaining">{product.timeRem}</p>
         <button className="flippedadd-to-cart-button">
-          <i class="bi bi-plus"></i>
+          <i className="bi bi-plus"></i>
         </button>
       </div>
     </div>
   );
+};
+FlippedProdCard.propTypes = {
+  product: PropTypes.object.isRequired,  // title should be a string and is required
 };
 
 export default FlippedProdCard;

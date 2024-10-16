@@ -7,6 +7,7 @@ import { useState } from "react";
 
 const Navbar = ({ itemCount }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedOption, setSelectedOption] = useState('option1');
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -38,13 +39,14 @@ const Navbar = ({ itemCount }) => {
         </div>
         <div>
           <ul className="Lang-OrdTrack">
-            <li class="dropdown-container">
-              <select id="language-select" className="lang-dropdown">
-                <option value="en">English</option>
-                <option value="es">Spanish</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <option value="zh">Chinese</option>
+            <li className="dropdown-container">
+              <select id="language-select" className="lang-dropdown" 
+              value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)}>
+                <option value="option1">English</option>
+                <option value="option2">Spanish</option>
+                <option value="option3">French</option>
+                <option value="option4">German</option>
+                <option value="option5">Chinese</option>
               </select>
             </li>
             <li>Order Tracking</li>
@@ -73,7 +75,7 @@ const Navbar = ({ itemCount }) => {
                 placeholder="Search..."
                 className="search-input"
               />
-              <i class="bi bi-search search-icon"></i>
+              <i className="bi bi-search search-icon"></i>
             </div>
           </li>
           <li className="filter-section">
@@ -89,13 +91,13 @@ const Navbar = ({ itemCount }) => {
           </li>
           <li>
             <button className="cart-button">
-              <i class="bi bi-cart-dash cart-icon"></i>
+              <i className="bi bi-cart-dash cart-icon"></i>
               {itemCount > 0 && <span className="badge">{itemCount}</span>}
             </button>
           </li>
           <li className="signin-user">
-            <i class="bi bi-person icon-location"></i>
-            <p>Sign In</p>
+            <i className="bi bi-person icon-location"></i>
+            <p>Sign In <span className="account">Account</span></p>
           </li>
         </ul>
       </div>
