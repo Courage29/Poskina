@@ -12,7 +12,7 @@ const FirstProductDisp = ({ title, description }) => {
   const FirstProductList = [
     {
       id: 1,
-      image: {Leggings},
+      image:Leggings,
       name: "Clothing",
       description: "PowerFit Leggings",
       price: 38000,
@@ -20,7 +20,7 @@ const FirstProductDisp = ({ title, description }) => {
     },
     {
       id: 2,
-      image: {EnduranceJacket},
+      image: EnduranceJacket,
       name: "Clothing",
       description: "Endurance Running Jacket",
       price: 28000,
@@ -28,7 +28,7 @@ const FirstProductDisp = ({ title, description }) => {
     },
     {
       id: 3,
-      image: {GymBag},
+      image: GymBag,
       name: "Bag",
       description: "Proflex Gym Bag",
       price: 18000,
@@ -36,7 +36,7 @@ const FirstProductDisp = ({ title, description }) => {
     },
     {
       id: 4,
-      image: {SpeedRunnerShoes},
+      image: SpeedRunnerShoes,
       name: "Shoes",
       description: "Speed runner X Pro Shoes",
       price: 45500,

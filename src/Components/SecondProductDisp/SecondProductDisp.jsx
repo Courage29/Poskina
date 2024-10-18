@@ -2,16 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import ProductCard from "../ProductCard/ProductCard";
 import "../ProductStyling/ProductStyling.css";
-import Leggings from "../../assets/leggings.png";
-import EnduranceJacket from "../../assets/endurancejacket.png";
-import GymBag from "../../assets/gymbag.png";
-import SpeedRunnerShoes from "../../assets/speedrunnershoes.png";
+import UltraCushion from "../../assets/ultracushion.png";
+import NikeCrossFit from "../../assets/nikecrossfit.png";
+import SwiftStride from "../../assets/swiftstride.png";
+import NikeTrail from "../../assets/niketrail.png";
 
 const SecondProductDisp = ({ title, description }) => {
   const SecondproductList = [
     {
       id: 1,
-      image: { Leggings },
+      image: UltraCushion,
       name: "shoes",
       description: "UltraCushion Running Shoes",
       price: 12500,
@@ -19,7 +19,7 @@ const SecondProductDisp = ({ title, description }) => {
     },
     {
       id: 2,
-      image: { EnduranceJacket },
+      image: NikeCrossFit,
       name: "shoes",
       description: "Nike Crossfit Trainers",
       price: 42000,
@@ -27,7 +27,7 @@ const SecondProductDisp = ({ title, description }) => {
     },
     {
       id: 3,
-      image: { GymBag },
+      image: NikeTrail,
       name: "shoes",
       description: "Nike Trail Running Shoes",
       price: 18000,
@@ -35,7 +35,7 @@ const SecondProductDisp = ({ title, description }) => {
     },
     {
       id: 4,
-      image: { SpeedRunnerShoes },
+      image: SwiftStride,
       name: "Shoes",
       description: "SwiftStride Slip-on Sneakers",
       price: 45500,

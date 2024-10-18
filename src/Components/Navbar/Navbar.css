@@ -95,13 +95,21 @@ li{
 }
 
 .filter-dropdown {
-    padding: 10px 0 10px 30px;
+    padding: 0.7rem 0rem 0.7rem 2rem;
     border: 2px solid #ccc;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 0.8rem;
     outline: none;
     cursor: pointer;
     border-radius: 23px;
+}
+.filter-section{
+    position: relative;
+}
+.filter-icon{
+    position: absolute;
+    left: 5px;
+    top: 10px;
 }
 .location{
     display: flex;
@@ -120,14 +128,6 @@ li{
 .account{
     color: black;
     font-weight: bold; 
-}
-.filter-section{
-    position: relative;
-}
-.filter-icon{
-    position: absolute;
-    left: 5px;
-    top: 10px;
 }
 .signin-user{
     display: flex;
